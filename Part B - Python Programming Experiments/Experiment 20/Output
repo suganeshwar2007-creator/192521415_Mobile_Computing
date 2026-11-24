@@ -1,0 +1,23 @@
+CDMA SPREADING AND DESPREADING
+=============================================
+
+User 1 data   : [1, 0, 1, 1]
+User 1 spread : [ 1 -1  1 -1 -1  1 -1  1  1 -1  1 -1  1 -1  1 -1]
+
+User 2 data   : [0, 0, 1, 0]
+User 2 spread : [-1 -1  1  1 -1 -1  1  1  1  1 -1 -1 -1 -1  1  1]
+
+User 3 data   : [1, 1, 0, 1]
+User 3 spread : [ 1 -1 -1  1  1 -1 -1  1 -1  1  1 -1  1 -1 -1  1]
+
+Composite transmitted signal:
+[ 1 -3  1  1 -1 -1 -1  3  1  1  1 -3  1 -3  1  1]
+
+DESPREADING AT RECEIVER
+=============================================
+
+User 1 correlator: [ 1. -1.  1.  1.] -> bits [1, 0, 1, 1] OK
+
+User 2 correlator: [-1. -1.  1. -1.] -> bits [0, 0, 1, 0] OK
+
+User 3 correlator: [ 1.  1. -1.  1.] -> bits [1, 1, 0, 1] OK
